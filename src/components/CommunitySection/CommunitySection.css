@@ -1,0 +1,190 @@
+.community-section {
+  padding: 2rem 1rem;
+  background-color: #f9fafb;
+  overflow: visible;
+}
+
+@media (min-width: 768px) {
+  .community-section {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .community-section {
+    padding: 4rem 2rem;
+  }
+}
+
+.community-banner {
+  background: linear-gradient(110deg, #3b82f6, #2563eb 55%, #1e40af);
+  border-radius: 1rem;
+  overflow: visible;
+  position: relative;
+  margin: 0 1rem;
+  box-shadow: 0 20px 40px rgba(2,6,23,0.15);
+}
+
+@media (min-width: 768px) {
+  .community-banner {
+    border-radius: 1.5rem;
+    margin: 0;
+  }
+}
+
+.community-grid {
+  display: grid;
+  align-items: center;
+  gap: 2rem;
+  overflow: visible;
+}
+
+@media (min-width: 1024px) {
+  .community-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+}
+
+.community-content {
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .community-content {
+    padding: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .community-content {
+    padding: 3rem;
+    text-align: left;
+  }
+}
+
+.community-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.15;
+}
+
+@media (min-width: 768px) {
+  .community-title {
+    font-size: 1.875rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .community-title {
+    font-size: 2.25rem;
+  }
+}
+
+.community-description {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #dbeafe;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .community-description {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .community-description {
+    font-size: 1.25rem;
+  }
+}
+
+/* Google Play Badge Styling */
+.google-play-button {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .google-play-button {
+    text-align: left;
+  }
+}
+
+.google-play-badge {
+  width: 200px;
+  height: auto;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+@media (min-width: 768px) {
+  .google-play-badge {
+    width: 240px;
+  }
+}
+
+.google-play-badge:hover {
+  transform: scale(1.05);
+}
+
+/* Image Section */
+.community-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  order: 2;
+  overflow: visible;
+}
+
+@media (min-width: 1024px) {
+  .community-image-container {
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0;
+    order: 1;
+  }
+}
+
+.community-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 20rem;
+  margin-top: -7rem;
+}
+
+@media (min-width: 768px) {
+  .community-image {
+    max-width: 24rem;
+    margin-top: -3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .community-image {
+    position: absolute;
+    bottom: 0rem;
+    right: 2rem;
+    width: auto;
+    max-width: 32rem;
+    margin-top: 0;
+  }
+}
+
+.community-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+

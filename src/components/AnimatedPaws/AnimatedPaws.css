@@ -1,0 +1,47 @@
+/* Floating animated paw prints traversing the hero section */
+.animated-paws {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.paw {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background-image: url('/images/paw-black.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.12;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.15));
+  animation: floatPaw linear infinite;
+}
+
+@media (min-width: 768px) {
+  .paw { width: 34px; height: 34px; opacity: 0.14; }
+}
+
+@keyframes floatPaw {
+  0% { transform: translateY(20%) translateX(-10%) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.15; }
+  50% { opacity: 0.18; }
+  90% { opacity: 0.12; }
+  100% { transform: translateY(-120%) translateX(10%) rotate(15deg); opacity: 0; }
+}
+
+/* Randomized start positions and durations for variety */
+.paw-1 { left: 5%; bottom: -10%; animation-duration: 14s; animation-delay: 0s; }
+.paw-2 { left: 15%; bottom: -20%; animation-duration: 16s; animation-delay: 1s; }
+.paw-3 { left: 25%; bottom: -15%; animation-duration: 18s; animation-delay: 2.5s; }
+.paw-4 { left: 35%; bottom: -25%; animation-duration: 15.5s; animation-delay: 0.8s; }
+.paw-5 { left: 45%; bottom: -18%; animation-duration: 19s; animation-delay: 3s; }
+.paw-6 { left: 55%; bottom: -22%; animation-duration: 17s; animation-delay: 1.7s; }
+.paw-7 { left: 65%; bottom: -15%; animation-duration: 20s; animation-delay: 2.2s; }
+.paw-8 { left: 75%; bottom: -28%; animation-duration: 16.8s; animation-delay: 0.5s; }
+.paw-9 { left: 85%; bottom: -12%; animation-duration: 18.7s; animation-delay: 2.8s; }
+.paw-10 { left: 12%; bottom: -30%; animation-duration: 21s; animation-delay: 1.2s; }
+.paw-11 { left: 52%; bottom: -35%; animation-duration: 19.6s; animation-delay: 2s; }
+.paw-12 { left: 88%; bottom: -26%; animation-duration: 22s; animation-delay: 3.6s; }
+
+

@@ -1,0 +1,124 @@
+.privacy-container {
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 2rem 1rem;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.privacy-content {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 3rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  line-height: 1.7;
+}
+
+.privacy-content h1 {
+  color: #000000;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 1rem;
+}
+
+.privacy-content h2 {
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.privacy-content p {
+  color: #333333;
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.privacy-content ul {
+  color: #333333;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.privacy-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  font-size: 1.125rem;
+}
+
+.privacy-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.privacy-footer p {
+  color: #666666;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.back-button {
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #000000;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.back-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.privacy-content section {
+  position: relative;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+.privacy-content section:not(:last-child) {
+  border-bottom: 2px solid #e5e7eb;
+}
+
+@media (max-width: 768px) {
+  .privacy-container {
+    padding: 1rem 0.5rem;
+  }
+  
+  .privacy-content {
+    padding: 2rem 1rem;
+  }
+  
+  .privacy-content h1 {
+    font-size: 2rem;
+  }
+  
+  .privacy-content h2 {
+    font-size: 1.25rem;
+  }
+  
+  .privacy-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .privacy-content section {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+} 
